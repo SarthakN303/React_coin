@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10%;
+  color: #ddd;
+  border-bottom: 2px solid #3c3c3c;
+}
+
+.logo {
+  width: 250px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.navbar ul li {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right select {
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 6px;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+}
+
+.nav-right option {
+  background: #c33764;
+  color: white;
+  padding: 5px;
+}
+
+.nav-right button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  color: #393939;
+  cursor: pointer;
+}
+
+.nav-right button img {
+  width: 15px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 20px 8%;
+  }
+
+  .header button {
+    gap: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 5%;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .header button img {
+    width: 12px;
+  }
+}
